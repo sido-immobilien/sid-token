@@ -54,5 +54,15 @@ contract SIDTokenTest is SIDToken {
         Assert.equal(balanceOf(acc0), uint(0), "invalid balance of account 0");
         Assert.equal(balanceOf(acc1), uint(20 * 1000), "invalid balance of account 1");
     }
+
+    /// #sender: account-1
+    function burnAmount() public {
+        Assert.equal(balanceOf(acc1), uint(20 * 1000), "invalid balance of account 1");
+
+        burn(uint(10 * 1000));
+
+        Assert.equal(balanceOf(acc1), uint(10 * 1000), "invalid balance of account 1");
+        Assert.equal(totalSupply(), uint(10 * 1000), "invalid amount of totalSupply");
+    }
 }
     
