@@ -1,6 +1,6 @@
 # SID Token
 
-This repository it the home of the smart contract source code of the SID Token. A crypto token is associated with a substance 
+This repository is the home of the smart contract source code of the SIDToken. This crypto token is associated with a substance 
 participation right for SIDO Immobilien GmbH. The token’s capital market prospectus has been approved by the Austrian Financial Market Authority (FMA).
 
 It uses the [@openzeppelin/contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) library for an ERC20 compliant token on the ethereum block chain. 
